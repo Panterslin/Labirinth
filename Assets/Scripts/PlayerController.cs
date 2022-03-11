@@ -44,4 +44,11 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.gameObject.tag == "Pickup") // jeœli obiekt dotkniêty
+        {
+            hit.gameObject.GetComponent<PickUp>().Picked(); //pobiera metode Picked ze skryptu PickUp
+        }
+    }
 }
