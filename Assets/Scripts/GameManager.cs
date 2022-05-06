@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour
     bool gamePaused = false;
     bool endGame = false;
     bool Win = false;
-    private int points = 0;
-    private int redKey = 0;
-    private int greenKey = 0;
-    private int goldKey = 0;
+    [SerializeField] private int points = 0;
+    [SerializeField] private int redKey = 0;
+    [SerializeField] private int greenKey = 0;
+    [SerializeField] private int goldKey = 0;
 
     void Start()
     {

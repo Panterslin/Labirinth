@@ -10,4 +10,5 @@ public class Key : PickUp
         GameManager.gameManager.AddKey(keyColor);
         Destroy(this.gameObject);
     }
+ 
 }

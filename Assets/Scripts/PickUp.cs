@@ -20,9 +20,10 @@ public class PickUp : MonoBehaviour
     {
         Rotation();
     }
-    private void Rotation()
+     protected void Rotation()
     {
 
-        transform.Rotate(new Vector3(0f, 0f, 2f));// tworzy vectory 3d , wed³ug których obraca obiekt
+        transform.Rotate(new Vector3(0f, 1f, 0f));// tworzy vectory 3d , wed³ug których obraca obiekt
     }
+    
 }
