@@ -13,6 +13,13 @@ public class Lock : MonoBehaviour
     {
         keyAnimator = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E) && iCanOpen && !locked) // get button down jest do myszy // po podejœciu do drzwi i wciœniêciu E zadzia³a zawartoœæ if
+        { // !bool - false w operatorach logicznych 
+            keyAnimator.SetBool("useKey", CheckTheKey());
+        }
+    }
     public void UseKey()
     {
         door.CloseOpen();
